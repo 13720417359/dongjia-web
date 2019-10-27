@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="东佳考研">
+    <title>东佳考研</title>
+    <link rel="stylesheet" href="css/graduate.css">
+    <script>
+        var fun = function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;  //clientWidth窗口大小
+                    if (!clientWidth) return;
+                    if ((100 * (clientWidth / 750)) <= 136) {
+                        //此处  750 为屏幕宽度，
+                        //  100 * (clientWidth / 750) ;  表示 100px =1rem
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    } else {
+                        docEl.style.fontSize = 100 + 'px';
+                    }
+                }
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        }
+        fun(document, window);
+    </script>
+</head>
+
+<body>
+    <div class="content_box">
+        <div class="header">
+            <img src="images/student/logo.png" alt="" class="logo">
+            <div class="pos">
+                <span class="add">西安</span>
+                <img src="images/下拉.jpg" alt="">
+                <div class="nav_box">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+
+        <img src="images/student/banner.jpg" alt="" class="banner">
+        <ul class="choose">
+            <li>
+                <a href="./graduate_zz.html">
+                    <img src="images/student/lcon.jpg" alt="">
+                    政治
+                </a>
+            </li>
+            <li>
+                <a href="./graduate_yy1.html">
+                    <img src="images/student/lcon2.jpg" alt="">
+                    英语一
+                </a>
+            </li>
+            <li>
+                <a href="./graduate_yy2.html">
+                    <img src="images/student/lcon3.jpg" alt="">
+                    英语二
+                </a>
+            </li>
+            <li>
+                <a href="./graduate_ry.html">
+                    <img src="images/student/lcon4.jpg" alt="">
+                    公共日语
+                </a>
+            </li>
+        </ul>
+        <input type="number" placeholder="请输入手机号" class="phone_number" id="input">
+        <button class="btn">免费领取一对一智能课程</button>
+        <div class="teacher_box">
+            <img src="images/student/21.png" alt="" class="uzi">
+            <p>东佳考研的中外教名师团队经过层层筛选，录用率低于8%，德语外教必须是德语母语使用者。中外教老师均是专业德语专家，经验丰富，发音地道。</p>
+            <img src="images/student/laoshi.jpg" alt="" class="mlxg">
+            <input type="number" placeholder="请输入手机号" class="phone_number" id="input_01">
+            <button class="btn_01">免费预约名师课堂</button>
+        </div>
+        <div class="subject">
+            <img src="images/student/22.png" alt="" class="ming">
+            <p class="sub_tit">每天2小时，人工智能学习，系统扫描知识点</p>
+            <img src="images/student/mlxg.jpg" alt="" class="karsa">
+            <p class="sub_tit">周末8-10人小班名师辅导，哪里不会学哪里</p>
+            <img src="images/student/mlxg.jpg" alt="" class="karsa">
+            <p class="sub_tit">24小时*7天，多对一辅导答疑+作业批改+1对1指导</p>
+            <img src="images/student/mlxg.jpg" alt="" class="karsa">
+        </div>
+        <div class="table">
+            <img src="images/student/23.png" alt="" class="langx">
+            <div class="cut">
+                <span class="cut_01">2020常规高分英雄榜</span>
+                <span class="cut_02">2020艺考高分英雄榜</span>
+            </div>
+            <table border="1" class="T1" cellpadding="0" cellspacing="0" border-collapse="separate" border-spacing: 0;>
+                <tr class="top">
+                    <td>学生</td>
+                    <td>分数</td>
+                </tr>
+                <tr>
+                    <td>李菲儿</td>
+                    <td class="yl">392分</td>
+                </tr>
+                <tr class="col">
+                    <td>安琳</td>
+                    <td class="yl">397分</td>
+                </tr>
+                <tr>
+                    <td>周妙涵</td>
+                    <td class="yl">401分</td>
+                </tr>
+                <tr class="col">
+                    <td>吴萱</td>
+                    <td class="yl">373分</td>
+                </tr>
+                <tr>
+                    <td>段梦琪</td>
+                    <td class="yl">380分</td>
+                </tr>
+                <tr class="col">
+                    <td>张佳佳</td>
+                    <td class="yl">370分</td>
+                </tr>
+                <tr>
+                    <td>肖萌</td>
+                    <td class="yl">402分</td>
+                </tr>
+                <tr class="col">
+                    <td>吴潇</td>
+                    <td class="yl">388分</td>
+                </tr>
+                <tr>
+                    <td>李元浩</td>
+                    <td class="yl">391分</td>
+                </tr>
+            </table>
+            <table border="1" class="T2" cellpadding="0" cellspacing="0" border-collapse="separate" border-spacing: 0;>
+                <tr class="top">
+                    <td>学生</td>
+                    <td>分数</td>
+                </tr>
+                <tr>
+                    <td>张瑞霖</td>
+                    <td class="yl">393分</td>
+                </tr>
+                <tr class="col">
+                    <td>李耀杰</td>
+                    <td class="yl">375分</td>
+                </tr>
+                <tr>
+                    <td>李子涵</td>
+                    <td class="yl">380分</td>
+                </tr>
+                <tr class="col">
+                    <td>赵宇轩</td>
+                    <td class="yl">377分</td>
+                </tr>
+                <tr>
+                    <td>孙晓辉</td>
+                    <td class="yl">360分</td>
+                </tr>
+                <tr class="col">
+                    <td>李雪</td>
+                    <td class="yl">376分</td>
+                </tr>
+                <tr>
+                    <td>姚海玲</td>
+                    <td class="yl">369分</td>
+                </tr>
+                <tr class="col">
+                    <td>宋明哲</td>
+                    <td class="yl">388分</td>
+                </tr>
+                <tr>
+                    <td>郝亚楠</td>
+                    <td class="yl">384分</td>
+                </tr>
+            </table>
+            <input type="number" placeholder="请输入手机号" class="phone_number" id="input_02">
+            <button class="btn_02">免费预约获取学习方案</button>
+        </div>
+        <div class="consulting">
+            <div class="consulting_left">
+                <p>咨询热线：</p>
+                <p>029-62670000</p>
+                <p>学校地址：西安市小寨西路26号银泰城9层</p>
+                <p>陕ICP备案14007021</p>
+            </div>
+            <img src="images/student/ewm.jpg" alt="" class="ewm">
+        </div>
+        <div class="footer">
+            <a href="javascript:void(0);" class="contact">
+                <img src="images/consult.png" alt="">
+                在线咨询
+            </a>
+            <a href="javascript:void(0);" class="contact bor">
+                <img src="images/phonec.png" alt="">
+                电话咨询
+            </a>
+            <a href="javascript:void(0);" class="listen">
+                免费预约试听
+            </a>
+        </div>
+        <div class="alert_box">
+            <div class="alert"></div>
+            <div class="outer">
+                <div class="outer_top">
+                    <img src="images/deyu.jpg" alt="">
+                    <div>
+                        <p>预约即可获得：</p>
+                        <ul>
+                            <li>1对语言学习规划与指导</li>
+                            <li>60分钟海归名师试听课一节</li>
+                            <li>报名专享500元奖学金</li>
+                        </ul>
+                    </div>
+                </div>
+                <input type="number" placeholder="请输入手机号码，方便老师联系您" class="tell phone_number" id="go_pho">
+                <button class="go">免费预约</button>
+                <p class="bh">东佳尊重并保护您的隐私</p>
+            </div>
+        </div>
+        <div class="alert_box_sec">
+            <div class="alert"></div>
+            <div class="sec_box">
+                <img src="images/success.png" alt="">
+                <p>提交成功</p>
+                <span>老师将尽快与你取得联系哦</span>
+                <button class="right">确定</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script src="js/graduate.js"></script>
+</body>
+
+</html>

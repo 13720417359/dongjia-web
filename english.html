@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="英语培训">
+    <title>东佳英语</title>
+    <link rel="stylesheet" href="css/english.css">
+    <script>
+        var fun = function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;  //clientWidth窗口大小
+                    if (!clientWidth) return;
+                    if ((100 * (clientWidth / 750)) <= 136) {
+                        //此处  750 为屏幕宽度，
+                        //  100 * (clientWidth / 750) ;  表示 100px =1rem
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    } else {
+                        docEl.style.fontSize = 100 + 'px';
+                    }
+                }
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        }
+        fun(document, window);
+    </script>
+</head>
+
+<body>
+    <div class="content_box">
+        <div class="header">
+            <img src="images/english/logo.png" alt="" class="logo">
+            <div>
+                <span class="add">西安</span>
+                <img src="images/下拉.jpg" alt="">
+                <div class="nav_box">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+        <div class="middle_box">
+            <div class="top">
+                <div class="top_box">
+                    <p>立即注册</p>
+                    <input type="number" placeholder="请输入手机号">
+                    <div>
+                        <select name="请选择年龄" id="choose" class="out">
+                            <option>请选择年龄</option>
+                            <option>少儿</option>
+                            <option>青年</option>
+                            <option>成年</option>
+                        </select>
+                        <span>|</span>
+                        <img src="images/english/zuo.jpg" alt="" class="down">
+                    </div>
+                    <div>
+                        <select name="请选择地点" id="choose" class="out">
+                            <option>请选择地点</option>
+                            <option>北京</option>
+                            <option>上海</option>
+                            <option>西安</option>
+                        </select>
+                        <span>|</span>
+                        <img src="images/english/zuo.jpg" alt="" class="down">
+                    </div>
+                    <button class="out">免费领取</button>
+                </div>
+            </div>
+            <div class="child_English">
+                <ul class="first_ul">
+                    <li>
+                        <img src="images/english/left.jpg" alt="">
+                    </li>
+                    <li>青少儿英语</li>
+                    <li>
+                        <img src="images/english/right.jpg" alt="">
+                    </li>
+                </ul>
+                <img src="images/english/child.jpg" alt="" class="banner_pic">
+                <ul class="second_ul">
+                    <li>
+                        <img src="images/english/005.jpg" alt="">
+                        <div>
+                            <p class="sec_tit">欧美外教小班课+外教一对一</p>
+                            <p class="sec_con">欧美外教母语，针对学生的具体情况进行教学，切实做到因材施教。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/english/006.jpg" alt="">
+                        <div>
+                            <p class="sec_tit">TALLS青少儿智能学习系统</p>
+                            <p class="sec_con">外教根据学生学习情况，针对性的进行辅导，哪里不会学哪里，让学习更高效。</p>
+                        </div>
+                    </li>
+                </ul>
+                <button class="btn_01" id="send_01">立即预约免费试听课</button>
+            </div>
+            <div class="adult_English">
+                <ul class="first_ul">
+                    <li>
+                        <img src="images/english/left.jpg" alt="">
+                    </li>
+                    <li>成人英语</li>
+                    <li>
+                        <img src="images/english/right.jpg" alt="">
+                    </li>
+                </ul>
+                <img src="images/english/child.jpg" alt="" class="banner_pic">
+                <ul class="second_ul">
+                    <li>
+                        <img src="images/english/005.jpg" alt="">
+                        <div>
+                            <p class="sec_tit">欧美外教小班课+外教一对一</p>
+                            <p class="sec_con">欧美外教母语，针对学生的具体情况进行教学，切实做到因材施教。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/english/006.jpg" alt="">
+                        <div>
+                            <p class="sec_tit">TALLS青少儿智能学习系统</p>
+                            <p class="sec_con">外教根据学生学习情况，针对性的进行辅导，哪里不会学哪里，让学习更高效。</p>
+                        </div>
+                    </li>
+                </ul>
+                <button class="btn_01">立即预约免费试听课</button>
+            </div>
+            <div class="ab_box">
+                <div class="about_dj">
+                    <ul class="first_ul">
+                        <li>
+                            <img src="images/english/left.jpg" alt="">
+                        </li>
+                        <li>关于东佳</li>
+                        <li>
+                            <img src="images/english/right.jpg" alt="">
+                        </li>
+                    </ul>
+                    <img src="images/english/关于东佳.jpg" alt="" class="banner_pic" style="margin-bottom: 0.25rem;">
+                </div>
+                <ul class="ab_tit">
+                    <li>
+                        规模最大、授课方式最全面的高品质外语培训中心；
+                    </li>
+                    <li>
+                        甄选师资团队，拥有行业有影响力的教研人员；
+                    </li>
+                    <li>
+                        独有的TALLS人工智能语言学习系统，让学习事半功倍；
+                    </li>
+                    <li>
+                        中外教老师均有丰富授课经验，掌握前沿教学方法。
+                    </li>
+                </ul>
+            </div>
+            <div class="more">
+                <div class="more_box">
+                    <p class="p_one">免费领取</p>
+                    <p class="p_two">外教英语课程大礼包</p>
+                </div>
+                <div class="leng">
+                    <img src="images/english/gift.png" alt="">
+                    <div style="margin-left: 0.4rem;">
+                        <p class="leng_tit">预约试听礼包</p>
+                        <ul class="leng_ul">
+                            <li>1对1语言学习规划与指导</li>
+                            <li>60分钟英语外教试听课一节</li>
+                            <li>报名专享500元奖学金</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom_ch_box">
+                    <select name="" id="choose" class="out all">
+                        <option>请选择年龄</option>
+                        <option>少儿</option>
+                        <option>青年</option>
+                        <option>成年</option>
+                    </select>
+                    <span>|</span>
+                    <img src="images/english/zuo.jpg" alt="" class="down_01">
+                </div>
+                <input type="number" placeholder="请输入手机号" class="phone_num">
+                <button class="btn_send">免费立即领取</button>
+            </div>
+            <div class="consulting">
+                <div class="consulting_left">
+                    <p>咨询热线：</p>
+                    <p>029-62670000</p>
+                    <p>学校地址：西安市小寨西路26号银泰城9层</p>
+                    <p>陕ICP备案14007021</p>
+                </div>
+                <img src="images/english/ewm.jpg" alt="" class="ewm">
+            </div>
+        </div>
+        <div class="footer">
+            <a href="javascript:void(0)" class="contact">
+                <img src="images/consult.png" alt="">
+                在线咨询
+            </a>
+            <a href="javascript:void(0)" class="contact bor">
+                <img src="images/phonec.png" alt="">
+                电话咨询
+            </a>
+            <a href="javascript:void(0)" class="listen">
+                免费预约试听
+            </a>
+        </div>
+        <div class="alert_box">
+            <div class="alert"></div>
+            <div class="outer">
+                <div class="outer_top">
+                    <img src="images/deyu.jpg" alt="">
+                    <div>
+                        <p>预约即可获得：</p>
+                        <ul>
+                            <li>1对语言学习规划与指导</li>
+                            <li>60分钟海归名师试听课一节</li>
+                            <li>报名专享500元奖学金</li>
+                        </ul>
+                    </div>
+                </div>
+                <input type="number" placeholder="请输入手机号码，方便老师联系您" class="tell">
+                <button class="go">免费预约</button>
+                <p class="bh">东佳尊重并保护您的隐私</p>
+            </div>
+        </div>
+        <div class="alert_box_sec">
+            <div class="alert"></div>
+            <div class="sec_box">
+                <img src="images/success.png" alt="">
+                <p>提交成功</p>
+                <span>老师将尽快与你取得联系哦</span>
+                <button class="right">确定</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script src="js/english.js"></script>
+</body>
+
+</html>

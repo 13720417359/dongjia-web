@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="东佳俄语">
+    <title>东佳俄语</title>
+    <link rel="stylesheet" href="css/russian.css">
+    <script>
+        var fun = function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;  //clientWidth窗口大小
+                    if (!clientWidth) return;
+                    if ((100 * (clientWidth / 750)) <= 136) {
+                        //此处  750 为屏幕宽度，
+                        //  100 * (clientWidth / 750) ;  表示 100px =1rem
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    } else {
+                        docEl.style.fontSize = 100 + 'px';
+                    }
+                }
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        }
+        fun(document, window);
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <img src="images/russian/logo.jpg" alt="" class="logo">
+            <div class="pos">
+                <span class="add">西安</span>
+                <img src="images/下拉.jpg" alt="">
+                <div class="nav_box">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="things">
+            <img src="images/Banner_01.jpg" alt="">
+        </div>
+        <ul class="choose">
+            <li>
+                <a href="./russian_gaokao.html">
+                    <img src="images/kaoshi.jpg" alt="">
+                    高考俄语
+                </a>
+            </li>
+            <li>
+                <a href="./russian_TP.html">
+                    <img src="images/chengji.jpg" alt="">
+                    ТРКИ等级考试
+                </a>
+            </li>
+            <li>
+                <a href="./russian_erwai.html">
+                    <img src="images/gaokao.jpg" alt="">
+                    二外俄语
+                </a>
+            </li>
+            <li>
+                <a href="./russian_shangwu.html">
+                    <img src="images/Study.jpg" alt="">
+                    商务俄语
+                </a>
+            </li>
+        </ul>
+        <input type="text" placeholder="请输入手机号" id="input">
+        <button id="no_pay">免费预约试听课</button>
+        <div class="cut-line"></div>
+        <div>
+            <div>
+                <div class="why">
+                    <img src="images/007.jpg" alt="" class="icon">
+                    <p class="name">为什么选择东佳俄语</p>
+                    <p class="tittle">
+                        <span></span>
+                        中俄小班名师
+                    </p>
+                    <p class="introduce">东佳俄语的中外教名师团队经过层层筛选，录用率低于10%，俄语外教必须是法语母语使用者。中外教老师均是专业俄语专家，教学经验丰富，口语发音地道。</p>
+                </div>
+                <img src="images/russian/laoshi.jpg" alt="" class="teacher">
+                <input type="text" placeholder="请输入手机号" id="input_01">
+                <button id="teacher">免费预约试听课</button>
+            </div>
+            <div>
+                <div class="why">
+                    <p class="tittle">
+                        <span></span>
+                        俄语Al智适应学习 中法名师小班辅导
+                    </p>
+                    <p class="introduce">
+                        TALLS人工智能学习系统是东佳外语联合华为人工智能团队联合开发的外语智适应学习系统，学生在进行视频学习的过程中，不断通过听说读写的训练检测，根据学生个体学习特点推送定制化学习方案。</p>
+                </div>
+                <ul class="fication">
+                    <li>
+                        <img src="images/ai.jpg" alt="">
+                        <p>
+                            <span>华为人工智能团队</span>
+                            联合东佳外语12年俄语教学经验的教师团队联合打造人工智能语言学习系统。
+                        </p>
+                    </li>
+                    <li>
+                        <img src="images/mteacher.jpg" alt="">
+                        <p>
+                            <span>中外俄语名师，</span>根据学生人工智能学习系统学习特点，针对性的进行辅导，哪里不会学哪里。
+                        </p>
+                    </li>
+                    <li>
+                        <img src="images/more.jpg" alt="">
+                        <p>
+                            <span>班主任学管老师多对一管理，</span>
+                            24小时答疑，作业批改，发音纠正，快速提升俄语水平。教学内容实用，带领众多学员顺利通过
+                        </p>
+                    </li>
+                </ul>
+                <img src="images/russian/图表.png" alt="" class="pic">
+                <input type="text" placeholder="请输入手机号" id="input_02">
+                <button id="student">免费预约试听课</button>
+            </div>
+        </div>
+        <div class="cut-line"></div>
+        <div class="model">
+            <p class="tittle study">
+                <span></span>
+                东佳俄语的学习模式
+            </p>
+            <div class="model_one">
+                <p class="model_tittle">课前AI智适应学习<span>（每天30分钟）</span></p>
+                <p class="model_details">
+                    视频切片化教学，名师线上课程根据知识点进行视频切片，每个知识点学习完成后，马上进行智能练习，<span>单词听写</span>，<span>看图识字</span>，<span>发音跟读</span>，<span>智能对话</span>等系列联系
+                </p>
+            </div>
+            <img src="images/class.jpg" alt="">
+            <div class="model_one">
+                <p class="model_tittle">名师2-3人小班面授课<span>（每次120分钟）</span></p>
+                <p class="model_details">根据学生智能预习的后台数据报告情况，针对性的进行<span>小班辅导</span>，哪里不会学哪里，避免时间浪费，<span>快速提升</span>学习效率。
+                </p>
+            </div>
+            <img src="images/deyu.jpg" alt="">
+            <div class="model_one">
+                <p class="model_tittle">课后答疑辅导<span>（7天*24小时）</span></p>
+                <p class="model_details">
+                    班主任老师多对一管理，每天检查<span>发音</span>，<span>作业布置</span>情况，<span>作业批改</span>、随时<span>在线答疑</span>，监督学习过程，确保学习效果。
+                </p>
+            </div>
+            <img src="images/que.jpg" alt="" class="question">
+            <input type="text" placeholder="请输入手机号" id="input_03">
+            <button id="listen_01">免费预约试听课</button>
+        </div>
+        <div class="cut-line"></div>
+        <div>
+            <div class="why">
+                <img src="images/007.jpg" alt="" class="icon">
+                <p class="name">学员反馈</p>
+                <div class="feedback">
+                    <div>
+                        <div class="feedback_header">
+                            <img src="images/que.jpg" alt="">
+                            <p class="stu jl">Анфиса同学</p>
+                        </div>
+                        <p class="feedback_content">
+                            学俄语是源于想去旅游，来东佳学习快两个月了，老师讲的课很实用，感觉离去俄罗斯旅游不远了，哈哈。
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div>
+                        <div class="feedback_header lay">
+                            <p class="stu">Виктор同学</p>
+                            <img src="images/que.jpg" alt="" class="jl">
+                        </div>
+                        <div style="clear: both;"></div>
+                        <p class="feedback_content">
+                            最想说的是TALLS学习系统，真的是太好用了，一方面让我做好课前预习，一方面检测知识点掌握情况，从一窍不通到口语能力有了高度提升，开心~
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div>
+                        <div class="feedback_header">
+                            <img src="images/que.jpg" alt="">
+                            <p class="stu jl">Дарья同学</p>
+                        </div>
+                        <p class="feedback_content">
+                            学俄语为以后的俄罗斯留学做铺垫，很喜欢东佳的小班辅导模式，可以有更多时间和老师交流，老师会给我们讲很多俄罗斯的文化，也教我们许多答题技巧，现在已经通过了
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="consulting">
+            <div class="consulting_left">
+                <p>咨询热线：</p>
+                <p>029-62670000</p>
+                <p>学校地址：西安市小寨西路26号银泰城9层</p>
+                <p>陕ICP备案14007021</p>
+            </div>
+            <img src="images/russian/二维码.png" alt="" class="ewm">
+        </div>
+        <div class="footer">
+            <a href="#" class="contact">
+                <img src="images/consult.png" alt="">
+                在线咨询
+            </a>
+            <a href="#" class="contact bor">
+                <img src="images/phonec.png" alt="">
+                电话咨询
+            </a>
+            <a href="#" class="listen">
+                免费预约试听
+            </a>
+        </div>
+        <div class="alert_box">
+            <div class="alert"></div>
+            <div class="outer">
+                <div class="outer_top">
+                    <img src="images/deyu.jpg" alt="">
+                    <div>
+                        <p>预约即可获得：</p>
+                        <ul>
+                            <li>1对语言学习规划与指导</li>
+                            <li>60分钟海归名师试听课一节</li>
+                            <li>报名专享500元奖学金</li>
+                        </ul>
+                    </div>
+                </div>
+                <input type="number" placeholder="请输入手机号码，方便老师联系您" class="tell">
+                <button class="go">免费预约</button>
+                <p class="bh">东佳尊重并保护您的隐私</p>
+            </div>
+        </div>
+        <div class="alert_box_sec">
+            <div class="alert"></div>
+            <div class="sec_box">
+                <img src="images/success.png" alt="">
+                <p>提交成功</p>
+                <span>老师将尽快与你取得联系哦</span>
+                <button class="right">确定</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script src="js/russian.js"></script>
+</body>
+
+</html>

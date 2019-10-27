@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="东佳雅思">
+    <title>东佳雅思</title>
+    <link rel="stylesheet" href="css/IELTS.css">
+    <script>
+        var fun = function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;  //clientWidth窗口大小
+                    if (!clientWidth) return;
+                    if ((100 * (clientWidth / 750)) <= 136) {
+                        //此处  750 为屏幕宽度，
+                        //  100 * (clientWidth / 750) ;  表示 100px =1rem
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    } else {
+                        docEl.style.fontSize = 100 + 'px';
+                    }
+                }
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        }
+        fun(document, window);
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <img src="images/IELTS/logo .png" alt="" class="logo">
+            <div class="pos">
+                <span class="add">西安</span>
+                <img src="images/下拉.jpg" alt="">
+                <div class="nav_box">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+        <div class="things">
+            <img src="images/IELTS/banner.jpg" alt="">
+        </div>
+        <input type="text" placeholder="请输入手机号" id="input">
+        <button id="no_pay">15天免费学，马上领取</button>
+        <div class="cut-line"></div>
+        <div>
+            <div>
+                <div class="why">
+                    <img src="images/IELTS/decoration.jpg" alt="" class="icon">
+                    <p class="name">名师小班课</p>
+                    <p class="tittle fw">
+                        面授针对性辅导让教育更有温度
+                    </p>
+                </div>
+                <ul class="sc">
+                    <li>
+                        <img src="images/que.jpg" alt="">
+                        <div>
+                            <p class="tit_nam">刘白杨<span>英语专业方向研究超过10年</span></p>
+                            <p class="tit_con">专注于托福，雅思出国类考试的教学工作，对于发音课程的理解非常深。幽默风趣互动性非常强，授课不限于讲，使学生能在娱乐中学习。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/que.jpg" alt="">
+                        <div>
+                            <p class="tit_nam">刘白杨<span>英语专业方向研究超过10年</span></p>
+                            <p class="tit_con">专注于托福，雅思出国类考试的教学工作，对于发音课程的理解非常深。幽默风趣互动性非常强，授课不限于讲，使学生能在娱乐中学习。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/que.jpg" alt="">
+                        <div>
+                            <p class="tit_nam">刘白杨<span>英语专业方向研究超过10年</span></p>
+                            <p class="tit_con">专注于托福，雅思出国类考试的教学工作，对于发音课程的理解非常深。幽默风趣互动性非常强，授课不限于讲，使学生能在娱乐中学习。</p>
+                        </div>
+                    </li>
+                </ul>
+                <input type="text" placeholder="请输入手机号" id="input_01">
+                <button id="teacher">免费预约名师试听课</button>
+            </div>
+            <div class="cut-line"></div>
+        </div>
+        <div class="model">
+            <p class="tittle study">
+                <img src="images/IELTS/decoration.jpg" alt="" class="icon">
+                人工智能学习+专业辅导
+                <span>哪里不会学哪里，高效提分有方啊</span>
+            </p>
+            <img src="images/que.jpg" alt="" class="question">
+            <ul class="fr_ul">
+                <li>
+                    <img src="images/IELTS/icon1.png" alt="">
+                    入学测试 专业规划
+                </li>
+                <li>
+                    <img src="images/IELTS/icon2.png" alt="">
+                    智能学习 反馈报告
+                </li>
+            </ul>
+            <ul class="se_ul">
+                <li>
+                    <img src="images/IELTS/icon3.png" alt="">
+                    名师辅导 快速提分
+                </li>
+                <li>
+                    <img src="images/IELTS/icon4.png" alt="">
+                    班主任监督管理
+                </li>
+            </ul>
+            <div style="height: 0.44rem;"></div>
+            <input type="text" placeholder="请输入手机号" id="input_02">
+            <button id="student">免费获取雅思提分方案</button>
+        </div>
+        <div class="cut-line"></div>
+        <div>
+            <div>
+                <div class="why">
+                    <img src="images/IELTS/decoration.jpg" alt="" class="icon">
+                    <p class="name">外教雅思口语陪练</p>
+                    <p class="tittle fw">
+                        甄选母语级外教老师，模式口语环节
+                    </p>
+                </div>
+                <ul class="sc">
+                    <li>
+                        <img src="images/que.jpg" alt="">
+                        <div>
+                            <p class="tit_nam">刘白杨<span>英语专业方向研究超过10年</span></p>
+                            <p class="tit_con">专注于托福，雅思出国类考试的教学工作，对于发音课程的理解非常深。幽默风趣互动性非常强，授课不限于讲，使学生能在娱乐中学习。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/que.jpg" alt="">
+                        <div>
+                            <p class="tit_nam">刘白杨<span>英语专业方向研究超过10年</span></p>
+                            <p class="tit_con">专注于托福，雅思出国类考试的教学工作，对于发音课程的理解非常深。幽默风趣互动性非常强，授课不限于讲，使学生能在娱乐中学习。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/que.jpg" alt="">
+                        <div>
+                            <p class="tit_nam">刘白杨<span>英语专业方向研究超过10年</span></p>
+                            <p class="tit_con">专注于托福，雅思出国类考试的教学工作，对于发音课程的理解非常深。幽默风趣互动性非常强，授课不限于讲，使学生能在娱乐中学习。</p>
+                        </div>
+                    </li>
+                </ul>
+                <input type="text" placeholder="请输入手机号" id="L_q">
+                <button class="Lq">马上领取 外教1对1口语测评</button>
+            </div>
+            <img src="images/IELTS/banner2.png" alt="" class="ban2">
+        </div>
+        <div class="consulting">
+            <div class="consulting_left">
+                <p>咨询热线：</p>
+                <p>029-62670000</p>
+                <p>学校地址：西安市小寨西路26号银泰城9层</p>
+                <p>陕ICP备案14007021</p>
+            </div>
+            <img src="images/IELTS/ewm.jpg" alt="" class="ewm">
+        </div>
+        <div class="footer">
+            <a href="javascript:void(0)" class="contact">
+                <img src="images/consult.png" alt="">
+                在线咨询
+            </a>
+            <a href="javascript:void(0)" class="contact bor">
+                <img src="images/phonec.png" alt="">
+                电话咨询
+            </a>
+            <a href="javascript:void(0)" class="listen">
+                免费预约试听
+            </a>
+        </div>
+        <div class="alert_box">
+            <div class="alert"></div>
+            <div class="outer">
+                <div class="outer_top">
+                    <img src="images/deyu.jpg" alt="">
+                    <div>
+                        <p>预约即可获得：</p>
+                        <ul>
+                            <li>1对语言学习规划与指导</li>
+                            <li>60分钟海归名师试听课一节</li>
+                            <li>报名专享500元奖学金</li>
+                        </ul>
+                    </div>
+                </div>
+                <input type="number" placeholder="请输入手机号码，方便老师联系您" class="tell">
+                <button class="go">免费预约</button>
+                <p class="bh">东佳尊重并保护您的隐私</p>
+            </div>
+        </div>
+        <div class="alert_box_sec">
+            <div class="alert"></div>
+            <div class="sec_box">
+                <img src="images/success.png" alt="">
+                <p>提交成功</p>
+                <span>老师将尽快与你取得联系哦</span>
+                <button class="right">确定</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script src="js/IELTS.js "></script>
+</body>
+
+</html>

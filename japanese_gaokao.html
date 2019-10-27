@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="日语培训">
+    <title>东佳日语—东佳高考日语</title>
+    <link rel="stylesheet" href="css/japanese_gaokao.css">
+    <script>
+        var fun = function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;  //clientWidth窗口大小
+                    if (!clientWidth) return;
+                    if ((100 * (clientWidth / 750)) <= 136) {
+                        //此处  750 为屏幕宽度，
+                        //  100 * (clientWidth / 750) ;  表示 100px =1rem
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    } else {
+                        docEl.style.fontSize = 100 + 'px';
+                    }
+                }
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        }
+        fun(document, window);
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/japanese_gaokao/logo.png" alt="" class="logo">
+            <div class="pos">
+                <span class="add">西安</span>
+                <img src="images/下拉.jpg" alt="">
+                <div class="nav_box">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="things">
+            <img src="images/Banner_01.jpg" alt="">
+        </div>
+        <div class="jump_box">
+            <ul class="jump">
+                <li>
+                    <a href="#">高考日语智适应学习引擎15节线上课程</a>
+                </li>
+                <li>
+                    <a href="#">3节名师一对一辅导</a>
+                </li>
+            </ul>
+            <button class="btn_send">免费领取</button>
+        </div>
+        <div class="cut_line"></div>
+        <div class="why">
+            <p class="tittle">
+                <span></span>
+                为什么选日语？
+            </p>
+            <img src="images/japanese_gaokao/表格.png" alt="">
+        </div>
+        <input type="text" placeholder="请输入手机号" id="input">
+        <button class="btn_01">免费领取历年真题</button>
+        <div class="cut_line"></div>
+        <div class="text_table">
+            <p class="tittle left">
+                <span></span>
+                高考日语高分榜
+            </p>
+            <table border="1" class="T1" cellpadding="0" cellspacing="0" border-collapse="separate" border-spacing: 0;>
+                <tr class="top">
+                    <td>学生</td>
+                    <td>分数</td>
+                </tr>
+                <tr>
+                    <td>刘世宇</td>
+                    <td>480分</td>
+                </tr>
+                <tr class="col">
+                    <td>简自豪</td>
+                    <td>475分</td>
+                </tr>
+                <tr>
+                    <td>史森明</td>
+                    <td>490分</td>
+                </tr>
+                <tr class="col">
+                    <td>洪浩轩</td>
+                    <td>488分</td>
+                </tr>
+                <tr>
+                    <td>严君泽</td>
+                    <td>460分</td>
+                </tr>
+                <tr class="col">
+                    <td>姿态</td>
+                    <td>466分</td>
+                </tr>
+                <tr>
+                    <td>谢镇营</td>
+                    <td>450分</td>
+                </tr>
+                <tr class="col">
+                    <td>石伟豪</td>
+                    <td>430分</td>
+                </tr>
+                <tr>
+                    <td>李元浩</td>
+                    <td>456分</td>
+                </tr>
+                <tr class="col">
+                    <td class="niupai">牛排</td>
+                    <td class="gender">450分</td>
+                </tr>
+            </table>
+            <input type="text" placeholder="请输入手机号" id="in_01">
+            <button class="btn_02">免费领取学习计划</button>
+        </div>
+        <div class="cut_line"></div>
+        <div class="bane">
+            <p class="tittle left">
+                <span></span>
+                东佳高考日语课程体系
+            </p>
+            <div class="subject">
+                <p class="sub_tit">智能预习 手机端/电脑端每天30分钟</p>
+                <img src="images/class.jpg" alt="" class="karsa">
+                <p class="sub_tit">名师小班约课 周末集中约课 个性化辅导</p>
+                <img src="images/deyu.jpg" alt="" class="karsa">
+                <p class="sub_tit">班级答疑群 24小时*7天 多对一群答疑辅导</p>
+                <img src="images/que.jpg" alt="" class="karsa">
+            </div>
+        </div>
+        <input type="text" placeholder="请输入手机号" id="in_02">
+        <button class="btn_03">免费领取大礼包</button>
+        <div class="consulting">
+            <div class="consulting_left">
+                <p>咨询热线：</p>
+                <p>029-62670000</p>
+                <p>学校地址：西安市小寨西路26号银泰城9层</p>
+                <p>陕ICP备案14007021</p>
+            </div>
+            <img src="images/japanese/二维码.png" alt="" class="ewm">
+        </div>
+        <div class="footer">
+            <a href="javascript:(0)" class="contact">
+                <img src="images/consult.png" alt="">
+                在线咨询
+            </a>
+            <a href="javascript:(0)" class="contact bor">
+                <img src="images/phonec.png" alt="">
+                电话咨询
+            </a>
+            <a href="javascript:(0)" class="listen">
+                免费预约试听
+            </a>
+        </div>
+        <div class="alert_box">
+            <div class="alert"></div>
+            <div class="outer">
+                <div class="outer_top">
+                    <img src="images/deyu.jpg" alt="">
+                    <div>
+                        <p>预约即可获得：</p>
+                        <ul>
+                            <li>1对语言学习规划与指导</li>
+                            <li>60分钟海归名师试听课一节</li>
+                            <li>报名专享500元奖学金</li>
+                        </ul>
+                    </div>
+                </div>
+                <input type="number" placeholder="请输入手机号码，方便老师联系您" class="tell">
+                <button class="go">免费预约</button>
+                <p class="bh">东佳尊重并保护您的隐私</p>
+            </div>
+        </div>
+        <div class="alert_box_sec">
+            <div class="alert"></div>
+            <div class="sec_box">
+                <img src="images/success.png" alt="">
+                <p>提交成功</p>
+                <span>老师将尽快与你取得联系哦</span>
+                <button class="right">确定</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script src="js/japanese_gaokao.js"></script>
+</body>
+
+</html>
