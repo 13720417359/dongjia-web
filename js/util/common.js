@@ -1,3 +1,8 @@
+/**
+ * 添加页面跳转code判断方法---getPageUrl
+ * @param {String} code
+ * @returns {string}
+ */
 function getPageUrl(code) {
     let pageUrl = "";
     switch (code) {
